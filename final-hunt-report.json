@@ -1,0 +1,1488 @@
+{
+  "all_text_content": [],
+  "money_values": [
+    {
+      "amount": "$ ",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HTML"
+    },
+    {
+      "amount": "$ ",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HTML"
+    },
+    {
+      "amount": "$ 0",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HTML"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HTML"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HTML"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HTML"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HTML"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HTML"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HTML"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HTML"
+    },
+    {
+      "amount": "$ 0",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HTML"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HTML"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HTML"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HTML"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HTML"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HTML"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HTML"
+    },
+    {
+      "amount": "$ ",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HEAD"
+    },
+    {
+      "amount": "$ ",
+      "context": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHoo",
+      "element": "HEAD"
+    },
+    {
+      "amount": "$ ",
+      "context": "import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHook(win",
+      "element": "SCRIPT"
+    },
+    {
+      "amount": "$ ",
+      "context": "import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHook(win",
+      "element": "SCRIPT"
+    },
+    {
+      "amount": "$ 0",
+      "context": "\n    CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinar",
+      "element": "BODY"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "\n    CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinar",
+      "element": "BODY"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "\n    CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinar",
+      "element": "BODY"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "\n    CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinar",
+      "element": "BODY"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "\n    CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinar",
+      "element": "BODY"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "\n    CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinar",
+      "element": "BODY"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "\n    CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinar",
+      "element": "BODY"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "\n    CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinar",
+      "element": "BODY"
+    },
+    {
+      "amount": "$ 0",
+      "context": "\n    CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinar",
+      "element": "BODY"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "\n    CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinar",
+      "element": "BODY"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "\n    CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinar",
+      "element": "BODY"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "\n    CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinar",
+      "element": "BODY"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "\n    CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinar",
+      "element": "BODY"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "\n    CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinar",
+      "element": "BODY"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "\n    CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinar",
+      "element": "BODY"
+    },
+    {
+      "amount": "$ 0",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaPro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "MAIN"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "MAIN"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "MAIN"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "MAIN"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "MAIN"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "MAIN"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "MAIN"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "MAIN"
+    },
+    {
+      "amount": "$ 0",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "MAIN"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "MAIN"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "MAIN"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "MAIN"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "MAIN"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "MAIN"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "MAIN"
+    },
+    {
+      "amount": "$ 0",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario d",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "👥 Empleados👤 Por EmpleadoAgregar⚠️ Selecciona fechas y horarios del evento par",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "👥 Empleados👤 Por EmpleadoAgregar⚠️ Selecciona fechas y horarios del evento par",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "Empleadocarlosar (operario)EmpleadoHorasHorasCosto ExtraCosto Extra$ 0Productos ",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "Empleadocarlosar (operario)EmpleadoHorasHorasCosto ExtraCosto Extra$ 0Productos ",
+      "element": "UL"
+    },
+    {
+      "amount": "$ 0",
+      "context": "Empleadocarlosar (operario)EmpleadoHorasHorasCosto ExtraCosto Extra$ 0Productos ",
+      "element": "LI"
+    },
+    {
+      "amount": "$ 0",
+      "context": "Empleadocarlosar (operario)EmpleadoHorasHorasCosto ExtraCosto Extra$ 0Productos ",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "Empleadocarlosar (operario)EmpleadoHorasHorasCosto ExtraCosto Extra$ 0Productos ",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "$ 0",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "$ 0",
+      "element": "P"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "Productos y ServiciosAgregarProductoAlquiler Carro de Paletas1 • Precio único: $",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "Productos y ServiciosAgregarProductoAlquiler Carro de Paletas1 • Precio único: $",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "Productos y ServiciosAgregarProductoAlquiler Carro de Paletas1 • Precio único: $",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "Productos y ServiciosAgregarProductoAlquiler Carro de Paletas1 • Precio único: $",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "ProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto1Precio únic",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "ProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto1Precio únic",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "ProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto1Precio únic",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "ProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto1Precio únic",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "ProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto1Precio únic",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "ProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto1Precio únic",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "ProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto1Precio únic",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "ProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto1Precio únic",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "ProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto1Precio únic",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "ProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto1Precio únic",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "ProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto1Precio únic",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "ProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "Alquiler Carro de Paletas1 • Precio único: $ 150.000Producto",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "Alquiler Carro de Paletas1 • Precio único: $ 150.000",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "Alquiler Carro de Paletas1 • Precio único: $ 150.000",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "1 • Precio único: $ 150.000",
+      "element": "SPAN"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "$ 150.000Total",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "$ 150.000Total",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 150.000",
+      "context": "$ 150.000",
+      "element": "P"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 0",
+      "context": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "Total general: $ 30.000 (Propios: $ 30.000 | Alquiler: $ 0 | Subcontrato: $ 0 | ",
+      "element": "SPAN"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "Total general: $ 30.000 (Propios: $ 30.000 | Alquiler: $ 0 | Subcontrato: $ 0 | ",
+      "element": "SPAN"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "Total general: $ 30.000 (Propios: $ 30.000 | Alquiler: $ 0 | Subcontrato: $ 0 | ",
+      "element": "SPAN"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "Total general: $ 30.000 (Propios: $ 30.000 | Alquiler: $ 0 | Subcontrato: $ 0 | ",
+      "element": "SPAN"
+    },
+    {
+      "amount": "$ 0 ",
+      "context": "Total general: $ 30.000 (Propios: $ 30.000 | Alquiler: $ 0 | Subcontrato: $ 0 | ",
+      "element": "SPAN"
+    },
+    {
+      "amount": "$ 0",
+      "context": "Total general: $ 30.000 (Propios: $ 30.000 | Alquiler: $ 0 | Subcontrato: $ 0 | ",
+      "element": "SPAN"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "Equipos PropiosAlquiler ExternoSubcontrataciónDesechablesProductos🔧 Equipos Pro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "Equipos PropiosAlquiler ExternoSubcontrataciónDesechablesProductos🔧 Equipos Pro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "Equipos PropiosAlquiler ExternoSubcontrataciónDesechablesProductos🔧 Equipos Pro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "Equipos PropiosAlquiler ExternoSubcontrataciónDesechablesProductos🔧 Equipos Pro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "Equipos PropiosAlquiler ExternoSubcontrataciónDesechablesProductos🔧 Equipos Pro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "Equipos PropiosAlquiler ExternoSubcontrataciónDesechablesProductos🔧 Equipos Pro",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🔧 Equipos Propios de Sue EventsAgregar EquipoEquipoCarro De Paletas - $ 30.000/",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🔧 Equipos Propios de Sue EventsAgregar EquipoEquipoCarro De Paletas - $ 30.000/",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🔧 Equipos Propios de Sue EventsAgregar EquipoEquipoCarro De Paletas - $ 30.000/",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🔧 Equipos Propios de Sue EventsAgregar EquipoEquipoCarro De Paletas - $ 30.000/",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🔧 Equipos Propios de Sue EventsAgregar EquipoEquipoCarro De Paletas - $ 30.000/",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🔧 Equipos Propios de Sue EventsAgregar EquipoEquipoCarro De Paletas - $ 30.000/",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🔧 Equipos Propios de Sue EventsAgregar EquipoEquipoCarro De Paletas - $ 30.000/",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "🔧 Equipos Propios de Sue EventsAgregar EquipoEquipoCarro De Paletas - $ 30.000/",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "EquipoCarro De Paletas - $ 30.000/hEquipoHorasHorasOperadorInstalación$ 30.000Ba",
+      "element": "UL"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "EquipoCarro De Paletas - $ 30.000/hEquipoHorasHorasOperadorInstalación$ 30.000Ba",
+      "element": "UL"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "EquipoCarro De Paletas - $ 30.000/hEquipoHorasHorasOperadorInstalación$ 30.000Ba",
+      "element": "UL"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "EquipoCarro De Paletas - $ 30.000/hEquipoHorasHorasOperadorInstalación$ 30.000Ba",
+      "element": "LI"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "EquipoCarro De Paletas - $ 30.000/hEquipoHorasHorasOperadorInstalación$ 30.000Ba",
+      "element": "LI"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "EquipoCarro De Paletas - $ 30.000/hEquipoHorasHorasOperadorInstalación$ 30.000Ba",
+      "element": "LI"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "EquipoCarro De Paletas - $ 30.000/hEquipoHorasHorasOperadorInstalación$ 30.000Ba",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "EquipoCarro De Paletas - $ 30.000/hEquipoHorasHorasOperadorInstalación$ 30.000Ba",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "EquipoCarro De Paletas - $ 30.000/hEquipoHorasHorasOperadorInstalación$ 30.000Ba",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "EquipoCarro De Paletas - $ 30.000/hEquipoHorasHorasOperadorInstalación$ 30.000",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "EquipoCarro De Paletas - $ 30.000/hEquipoHorasHorasOperadorInstalación$ 30.000",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "EquipoCarro De Paletas - $ 30.000/hEquipo",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "EquipoCarro De Paletas - $ 30.000/hEquipo",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "Carro De Paletas - $ 30.000/hEquipo",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "Carro De Paletas - $ 30.000/h",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "$ 30.000",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "$ 30.000",
+      "element": "P"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "Base: $ 30.000",
+      "element": "SPAN"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "Total Equipos Propios: $ 30.000",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "Total Equipos Propios: $ 30.000",
+      "element": "H6"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💡 Resumen completo:• Equipos propios: 1 equipo(s) - $ 30.000Total general: $ 30",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💡 Resumen completo:• Equipos propios: 1 equipo(s) - $ 30.000Total general: $ 30",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💡 Resumen completo:• Equipos propios: 1 equipo(s) - $ 30.000Total general: $ 30",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💡 Resumen completo:• Equipos propios: 1 equipo(s) - $ 30.000Total general: $ 30",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💡 Resumen completo:• Equipos propios: 1 equipo(s) - $ 30.000Total general: $ 30",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💡 Resumen completo:• Equipos propios: 1 equipo(s) - $ 30.000Total general: $ 30",
+      "element": "DIV"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💡 Resumen completo:• Equipos propios: 1 equipo(s) - $ 30.000Total general: $ 30",
+      "element": "P"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "💡 Resumen completo:• Equipos propios: 1 equipo(s) - $ 30.000Total general: $ 30",
+      "element": "P"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "• Equipos propios: 1 equipo(s) - $ 30.000",
+      "element": "SPAN"
+    },
+    {
+      "amount": "$ 30.000",
+      "context": "Total general: $ 30.000",
+      "element": "STRONG"
+    }
+  ],
+  "potential_bugs": [],
+  "form_state": {
+    "text": "2",
+    "number": "1",
+    "checkbox": "on"
+  },
+  "calculations": [
+    {
+      "text": "\n    import { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHook(window);\nwindow.$RefreshReg$ = () => {",
+      "element": "HTML"
+    },
+    {
+      "text": "\n    CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaProveedoresTransporteCotizacionesCalcu",
+      "element": "BODY"
+    },
+    {
+      "text": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaProveedoresTransporteCotizacionesCalculador",
+      "element": "DIV"
+    },
+    {
+      "text": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaProveedoresTransporteCotizacionesCalculador",
+      "element": "DIV"
+    },
+    {
+      "text": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario debe estar asociado a mínimo un producto:",
+      "element": "MAIN"
+    },
+    {
+      "text": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario debe estar asociado a mínimo un producto:",
+      "element": "DIV"
+    },
+    {
+      "text": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario debe estar asociado a mínimo un producto:",
+      "element": "DIV"
+    },
+    {
+      "text": "💰 Calculadora de Precios Sue Events⚠️ Validación de Operarios⚠️ Cada operario debe estar asociado a mínimo un producto:",
+      "element": "DIV"
+    },
+    {
+      "text": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de TransporteNombre del EventoNombre del E",
+      "element": "DIV"
+    },
+    {
+      "text": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de TransporteNombre del EventoNombre del E",
+      "element": "DIV"
+    },
+    {
+      "text": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de TransporteNombre del EventoNombre del E",
+      "element": "DIV"
+    },
+    {
+      "text": "Cliente *​Cliente *Zona de Transporte​Zona de TransporteNombre del EventoNombre del EventoFecha de Inicio *Fecha de Inic",
+      "element": "DIV"
+    },
+    {
+      "text": "Cliente *​Cliente *Zona de Transporte​Zona de TransporteNombre del EventoNombre del EventoFecha de Inicio *Fecha de Inic",
+      "element": "DIV"
+    },
+    {
+      "text": "Margen de ganancia (%)Margen de ganancia (%)",
+      "element": "DIV"
+    },
+    {
+      "text": "Margen de ganancia (%)Margen de ganancia (%)",
+      "element": "DIV"
+    },
+    {
+      "text": "Margen de ganancia (%)",
+      "element": "LABEL"
+    },
+    {
+      "text": "Margen de ganancia (%)",
+      "element": "DIV"
+    },
+    {
+      "text": "Margen de ganancia (%)",
+      "element": "FIELDSET"
+    },
+    {
+      "text": "Margen de ganancia (%)",
+      "element": "LEGEND"
+    },
+    {
+      "text": "Margen de ganancia (%)",
+      "element": "SPAN"
+    },
+    {
+      "text": "Productos y ServiciosAgregarProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto1Precio únicoCantidadCan",
+      "element": "DIV"
+    },
+    {
+      "text": "Productos y ServiciosAgregarProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto1Precio únicoCantidadCan",
+      "element": "DIV"
+    },
+    {
+      "text": "ProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto1Precio únicoCantidadCantidad$ 150.000TotalPrecio cu",
+      "element": "DIV"
+    },
+    {
+      "text": "ProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto1Precio únicoCantidadCantidad$ 150.000TotalPrecio cu",
+      "element": "DIV"
+    },
+    {
+      "text": "ProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto1Precio únicoCantidadCantidad$ 150.000TotalPrecio cu",
+      "element": "DIV"
+    },
+    {
+      "text": "ProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto1Precio únicoCantidadCantidad$ 150.000TotalPrecio cu",
+      "element": "DIV"
+    },
+    {
+      "text": "ProductoAlquiler Carro de Paletas1 • Precio único: $ 150.000Producto1Precio únicoCantidadCantidad$ 150.000TotalPrecio cu",
+      "element": "DIV"
+    },
+    {
+      "text": "$ 150.000Total",
+      "element": "DIV"
+    },
+    {
+      "text": "$ 150.000Total",
+      "element": "DIV"
+    },
+    {
+      "text": "Total",
+      "element": "SPAN"
+    },
+    {
+      "text": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.000 | Alquiler: $ 0 | Subcontrato: $ 0 |",
+      "element": "DIV"
+    },
+    {
+      "text": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.000 | Alquiler: $ 0 | Subcontrato: $ 0 |",
+      "element": "DIV"
+    },
+    {
+      "text": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.000 | Alquiler: $ 0 | Subcontrato: $ 0 |",
+      "element": "DIV"
+    },
+    {
+      "text": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 30.000 (Propios: $ 30.000 | Alquiler: $ 0 | Subcontrato: $ 0 |",
+      "element": "DIV"
+    },
+    {
+      "text": "Total general: $ 30.000 (Propios: $ 30.000 | Alquiler: $ 0 | Subcontrato: $ 0 | Desechables: $ 0 | Productos Personaliza",
+      "element": "SPAN"
+    },
+    {
+      "text": "Equipos PropiosAlquiler ExternoSubcontrataciónDesechablesProductos🔧 Equipos Propios de Sue EventsAgregar EquipoEquipoCa",
+      "element": "DIV"
+    },
+    {
+      "text": "🔧 Equipos Propios de Sue EventsAgregar EquipoEquipoCarro De Paletas - $ 30.000/hEquipoHorasHorasOperadorInstalación$ 30",
+      "element": "DIV"
+    },
+    {
+      "text": "🔧 Equipos Propios de Sue EventsAgregar EquipoEquipoCarro De Paletas - $ 30.000/hEquipoHorasHorasOperadorInstalación$ 30",
+      "element": "DIV"
+    },
+    {
+      "text": "Total Equipos Propios: $ 30.000",
+      "element": "DIV"
+    },
+    {
+      "text": "Total Equipos Propios: $ 30.000",
+      "element": "H6"
+    },
+    {
+      "text": "💡 Resumen completo:• Equipos propios: 1 equipo(s) - $ 30.000Total general: $ 30.000",
+      "element": "DIV"
+    },
+    {
+      "text": "💡 Resumen completo:• Equipos propios: 1 equipo(s) - $ 30.000Total general: $ 30.000",
+      "element": "DIV"
+    },
+    {
+      "text": "💡 Resumen completo:• Equipos propios: 1 equipo(s) - $ 30.000Total general: $ 30.000",
+      "element": "DIV"
+    },
+    {
+      "text": "💡 Resumen completo:• Equipos propios: 1 equipo(s) - $ 30.000Total general: $ 30.000",
+      "element": "P"
+    },
+    {
+      "text": "Total general: $ 30.000",
+      "element": "STRONG"
+    }
+  ]
+}

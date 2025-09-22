@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(claude mcp add supabase npx:*)",
+      "Bash(echo $HOME)",
+      "Bash(mkdir:*)",
+      "Bash(touch:*)",
+      "Bash(cp:*)",
+      "Bash(claude mcp)",
+      "mcp__supabase__apply_migration",
+      "mcp__supabase__list_tables",
+      "mcp__supabase__execute_sql",
+      "Bash(npm install:*)",
+      "Bash(npm run type-check:*)",
+      "Bash(npm run dev)",
+      "mcp__supabase__get_anon_key",
+      "Bash(npx supabase:*)",
+      "Read(C:\\Users\\ASUS\\Downloads/**)"
+    ],
+    "deny": []
+  }
+}

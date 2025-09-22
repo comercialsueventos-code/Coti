@@ -1,0 +1,90 @@
+{
+  "findings": [
+    {
+      "type": "pricing_calculator_elements",
+      "data": [
+        {
+          "text": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaProveedoresTransporteCotizacionesCalculadoraTurnosAprobacionesConfiguraciónSistema de Cotizaciones v1.0💰 Calculadora de Precios Sue Events📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de TransporteNombre del EventoNombre del EventoFecha de Inicio *Fecha de Inicio *Fecha de Fin *Fecha de Fin *Hora de Inicio *​Hora de Inicio *Hora de Fin *​Hora de Fin *🎉 Evento: EventoDirección del EventoDirección del EventoCiudad del Evento​Ciudad del EventoDescripción del EventoDescripción del EventoMargen de ganancia (%)Margen de ganancia (%)👥 Empleados👤 Por EmpleadoAgregar⚠️ Selecciona fechas y horarios del evento para calcular horas de operarios automáticamenteNo hay empleados agregadosConfigura fechas y horarios del evento, luego agrega empleadosProductos y ServiciosAgregarNo hay productos agregados. Agrega productos para calcular costos.Vincular Operarios a ProductosAsigne qué productos atiende cada operario​Vista compactaAgregue operarios para configurar sus asociaciones a productos.🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 0 (Propios: $ 0 | Alquiler: $ 0 | Subcontrato: $ 0 | Desechables: $ 0 | Productos Personalizados: $ 0)Equipos PropiosAlquiler ExternoSubcontrataciónDesechablesProductos🔧 Equipos Propios de Sue EventsAgregar EquipoNo hay equipos agregados. Haz clic en \"Agregar Equipo\" para comenzar.Resultados del CálculoErrores en la configuración:Cliente es requeridoSelecciona fecha de inicio del eventoSelecciona fecha de fin del eventoAgrega al menos un empleadoAgrega al menos un productoDatos de cotización no proporcionados",
+          "tag": "DIV",
+          "type": "N/A",
+          "className": "",
+          "value": "N/A"
+        },
+        {
+          "text": "CalculadoraSue EventsDashboardClientesEmpleadosProductosDesechablesMaquinariaProveedoresTransporteCotizacionesCalculadoraTurnosAprobacionesConfiguraciónSistema de Cotizaciones v1.0💰 Calculadora de Precios Sue Events📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de TransporteNombre del EventoNombre del EventoFecha de Inicio *Fecha de Inicio *Fecha de Fin *Fecha de Fin *Hora de Inicio *​Hora de Inicio *Hora de Fin *​Hora de Fin *🎉 Evento: EventoDirección del EventoDirección del EventoCiudad del Evento​Ciudad del EventoDescripción del EventoDescripción del EventoMargen de ganancia (%)Margen de ganancia (%)👥 Empleados👤 Por EmpleadoAgregar⚠️ Selecciona fechas y horarios del evento para calcular horas de operarios automáticamenteNo hay empleados agregadosConfigura fechas y horarios del evento, luego agrega empleadosProductos y ServiciosAgregarNo hay productos agregados. Agrega productos para calcular costos.Vincular Operarios a ProductosAsigne qué productos atiende cada operario​Vista compactaAgregue operarios para configurar sus asociaciones a productos.🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 0 (Propios: $ 0 | Alquiler: $ 0 | Subcontrato: $ 0 | Desechables: $ 0 | Productos Personalizados: $ 0)Equipos PropiosAlquiler ExternoSubcontrataciónDesechablesProductos🔧 Equipos Propios de Sue EventsAgregar EquipoNo hay equipos agregados. Haz clic en \"Agregar Equipo\" para comenzar.Resultados del CálculoErrores en la configuración:Cliente es requeridoSelecciona fecha de inicio del eventoSelecciona fecha de fin del eventoAgrega al menos un empleadoAgrega al menos un productoDatos de cotización no proporcionados",
+          "tag": "DIV",
+          "type": "N/A",
+          "className": "MuiBox-root css-k008qs",
+          "value": "N/A"
+        },
+        {
+          "text": "💰 Calculadora de Precios Sue Events📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de TransporteNombre del EventoNombre del EventoFecha de Inicio *Fecha de Inicio *Fecha de Fin *Fecha de Fin *Hora de Inicio *​Hora de Inicio *Hora de Fin *​Hora de Fin *🎉 Evento: EventoDirección del EventoDirección del EventoCiudad del Evento​Ciudad del EventoDescripción del EventoDescripción del EventoMargen de ganancia (%)Margen de ganancia (%)👥 Empleados👤 Por EmpleadoAgregar⚠️ Selecciona fechas y horarios del evento para calcular horas de operarios automáticamenteNo hay empleados agregadosConfigura fechas y horarios del evento, luego agrega empleadosProductos y ServiciosAgregarNo hay productos agregados. Agrega productos para calcular costos.Vincular Operarios a ProductosAsigne qué productos atiende cada operario​Vista compactaAgregue operarios para configurar sus asociaciones a productos.🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 0 (Propios: $ 0 | Alquiler: $ 0 | Subcontrato: $ 0 | Desechables: $ 0 | Productos Personalizados: $ 0)Equipos PropiosAlquiler ExternoSubcontrataciónDesechablesProductos🔧 Equipos Propios de Sue EventsAgregar EquipoNo hay equipos agregados. Haz clic en \"Agregar Equipo\" para comenzar.Resultados del CálculoErrores en la configuración:Cliente es requeridoSelecciona fecha de inicio del eventoSelecciona fecha de fin del eventoAgrega al menos un empleadoAgrega al menos un productoDatos de cotización no proporcionados",
+          "tag": "DIV",
+          "type": "N/A",
+          "className": "MuiContainer-root MuiContainer-maxWidthXl css-19r6kue-MuiContainer-root",
+          "value": "N/A"
+        },
+        {
+          "text": "💰 Calculadora de Precios Sue Events📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de TransporteNombre del EventoNombre del EventoFecha de Inicio *Fecha de Inicio *Fecha de Fin *Fecha de Fin *Hora de Inicio *​Hora de Inicio *Hora de Fin *​Hora de Fin *🎉 Evento: EventoDirección del EventoDirección del EventoCiudad del Evento​Ciudad del EventoDescripción del EventoDescripción del EventoMargen de ganancia (%)Margen de ganancia (%)👥 Empleados👤 Por EmpleadoAgregar⚠️ Selecciona fechas y horarios del evento para calcular horas de operarios automáticamenteNo hay empleados agregadosConfigura fechas y horarios del evento, luego agrega empleadosProductos y ServiciosAgregarNo hay productos agregados. Agrega productos para calcular costos.Vincular Operarios a ProductosAsigne qué productos atiende cada operario​Vista compactaAgregue operarios para configurar sus asociaciones a productos.🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 0 (Propios: $ 0 | Alquiler: $ 0 | Subcontrato: $ 0 | Desechables: $ 0 | Productos Personalizados: $ 0)Equipos PropiosAlquiler ExternoSubcontrataciónDesechablesProductos🔧 Equipos Propios de Sue EventsAgregar EquipoNo hay equipos agregados. Haz clic en \"Agregar Equipo\" para comenzar.Resultados del CálculoErrores en la configuración:Cliente es requeridoSelecciona fecha de inicio del eventoSelecciona fecha de fin del eventoAgrega al menos un empleadoAgrega al menos un productoDatos de cotización no proporcionados",
+          "tag": "DIV",
+          "type": "N/A",
+          "className": "MuiBox-root css-1sf3xto",
+          "value": "N/A"
+        },
+        {
+          "text": "💰 Calculadora de Precios Sue Events📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de TransporteNombre del EventoNombre del EventoFecha de Inicio *Fecha de Inicio *Fecha de Fin *Fecha de Fin *Hora de Inicio *​Hora de Inicio *Hora de Fin *​Hora de Fin *🎉 Evento: EventoDirección del EventoDirección del EventoCiudad del Evento​Ciudad del EventoDescripción del EventoDescripción del EventoMargen de ganancia (%)Margen de ganancia (%)👥 Empleados👤 Por EmpleadoAgregar⚠️ Selecciona fechas y horarios del evento para calcular horas de operarios automáticamenteNo hay empleados agregadosConfigura fechas y horarios del evento, luego agrega empleadosProductos y ServiciosAgregarNo hay productos agregados. Agrega productos para calcular costos.Vincular Operarios a ProductosAsigne qué productos atiende cada operario​Vista compactaAgregue operarios para configurar sus asociaciones a productos.🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 0 (Propios: $ 0 | Alquiler: $ 0 | Subcontrato: $ 0 | Desechables: $ 0 | Productos Personalizados: $ 0)Equipos PropiosAlquiler ExternoSubcontrataciónDesechablesProductos🔧 Equipos Propios de Sue EventsAgregar EquipoNo hay equipos agregados. Haz clic en \"Agregar Equipo\" para comenzar.Resultados del CálculoErrores en la configuración:Cliente es requeridoSelecciona fecha de inicio del eventoSelecciona fecha de fin del eventoAgrega al menos un empleadoAgrega al menos un productoDatos de cotización no proporcionados",
+          "tag": "DIV",
+          "type": "N/A",
+          "className": "MuiBox-root css-161fz3m",
+          "value": "N/A"
+        },
+        {
+          "text": "📋 Información del Cliente y EventoCliente *​Cliente *Zona de Transporte​Zona de TransporteNombre del EventoNombre del EventoFecha de Inicio *Fecha de Inicio *Fecha de Fin *Fecha de Fin *Hora de Inicio *​Hora de Inicio *Hora de Fin *​Hora de Fin *🎉 Evento: EventoDirección del EventoDirección del EventoCiudad del Evento​Ciudad del EventoDescripción del EventoDescripción del EventoMargen de ganancia (%)Margen de ganancia (%)👥 Empleados👤 Por EmpleadoAgregar⚠️ Selecciona fechas y horarios del evento para calcular horas de operarios automáticamenteNo hay empleados agregadosConfigura fechas y horarios del evento, luego agrega empleadosProductos y ServiciosAgregarNo hay productos agregados. Agrega productos para calcular costos.Vincular Operarios a ProductosAsigne qué productos atiende cada operario​Vista compactaAgregue operarios para configurar sus asociaciones a productos.🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 0 (Propios: $ 0 | Alquiler: $ 0 | Subcontrato: $ 0 | Desechables: $ 0 | Productos Personalizados: $ 0)Equipos PropiosAlquiler ExternoSubcontrataciónDesechablesProductos🔧 Equipos Propios de Sue EventsAgregar EquipoNo hay equipos agregados. Haz clic en \"Agregar Equipo\" para comenzar.Resultados del CálculoErrores en la configuración:Cliente es requeridoSelecciona fecha de inicio del eventoSelecciona fecha de fin del eventoAgrega al menos un empleadoAgrega al menos un productoDatos de cotización no proporcionados",
+          "tag": "DIV",
+          "type": "N/A",
+          "className": "MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-zow5z4-MuiGrid-root",
+          "value": "N/A"
+        },
+        {
+          "text": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 0 (Propios: $ 0 | Alquiler: $ 0 | Subcontrato: $ 0 | Desechables: $ 0 | Productos Personalizados: $ 0)Equipos PropiosAlquiler ExternoSubcontrataciónDesechablesProductos🔧 Equipos Propios de Sue EventsAgregar EquipoNo hay equipos agregados. Haz clic en \"Agregar Equipo\" para comenzar.",
+          "tag": "DIV",
+          "type": "N/A",
+          "className": "MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root",
+          "value": "N/A"
+        },
+        {
+          "text": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 0 (Propios: $ 0 | Alquiler: $ 0 | Subcontrato: $ 0 | Desechables: $ 0 | Productos Personalizados: $ 0)Equipos PropiosAlquiler ExternoSubcontrataciónDesechablesProductos🔧 Equipos Propios de Sue EventsAgregar EquipoNo hay equipos agregados. Haz clic en \"Agregar Equipo\" para comenzar.",
+          "tag": "DIV",
+          "type": "N/A",
+          "className": "MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-8jjggl-MuiPaper-root-MuiCard-root",
+          "value": "N/A"
+        },
+        {
+          "text": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 0 (Propios: $ 0 | Alquiler: $ 0 | Subcontrato: $ 0 | Desechables: $ 0 | Productos Personalizados: $ 0)",
+          "tag": "DIV",
+          "type": "N/A",
+          "className": "MuiCardHeader-root css-185gdzj-MuiCardHeader-root",
+          "value": "N/A"
+        },
+        {
+          "text": "🏭 Maquinaria, Alquiler y SubcontrataciónTotal general: $ 0 (Propios: $ 0 | Alquiler: $ 0 | Subcontrato: $ 0 | Desechables: $ 0 | Productos Personalizados: $ 0)",
+          "tag": "DIV",
+          "type": "N/A",
+          "className": "MuiCardHeader-content css-1qbkelo-MuiCardHeader-content",
+          "value": "N/A"
+        },
+        {
+          "text": "Total general: $ 0 (Propios: $ 0 | Alquiler: $ 0 | Subcontrato: $ 0 | Desechables: $ 0 | Productos Personalizados: $ 0)",
+          "tag": "SPAN",
+          "type": "N/A",
+          "className": "MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader css-nrdprl-MuiTypography-root",
+          "value": "N/A"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    "debug-quotes-page.png",
+    "debug-pricing-calculator.png"
+  ]
+}

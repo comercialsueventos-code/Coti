@@ -1,0 +1,101 @@
+schema: 1
+story: 'TMD-CONSOLIDATED'
+story_title: 'Transport Manual Distribution - Brownfield Story (CONSOLIDATED)'
+gate: CONCERNS
+status_reason: 'Core functionality excellent but critical testing gaps must be addressed for production safety'
+reviewer: 'Quinn (Test Architect)'
+updated: '2025-01-09T20:30:00Z'
+
+top_issues:
+  - severity: high
+    category: testing
+    description: 'No unit tests for manual transport distribution logic'
+    refs: ['src/services/pricing.service.ts', 'src/components/pricing/sections/PricingClientSelection.tsx']
+    suggested_owner: dev
+  - severity: high  
+    category: testing
+    description: 'Missing integration tests for transport validation UI'
+    refs: ['src/components/pricing/sections/PricingClientSelection.tsx']
+    suggested_owner: dev
+  - severity: medium
+    category: code_quality
+    description: 'Debug console.log statements left in production code'
+    refs: ['src/components/pricing/sections/PricingCalculationSummary.tsx:343-365']
+    suggested_owner: dev
+  - severity: medium
+    category: accessibility
+    description: 'Transport allocation inputs lack comprehensive ARIA labels'
+    refs: ['src/components/pricing/sections/PricingClientSelection.tsx']
+    suggested_owner: dev
+
+waiver: { active: false }
+
+# Extended fields:
+quality_score: 70  # 100 - (20×0 FAILs) - (10×3 CONCERNS) = 70
+expires: '2025-01-23T20:30:00Z'  # 2 weeks from review
+
+evidence:
+  tests_reviewed: 4
+  risks_identified: 5
+  trace:
+    ac_covered: [1, 2, 3, 4, 5, 6, 7, 9, 10]  # 9 of 10 ACs fully covered
+    ac_gaps: [8]  # Testing AC not met
+
+nfr_validation:
+  security:
+    status: PASS
+    notes: 'Input validation, type safety, and SQL injection prevention properly implemented'
+  performance:
+    status: PASS
+    notes: 'Real-time validation <100ms, efficient React state management'
+  reliability:
+    status: PASS
+    notes: 'Feature flag pattern enables safe rollback, proper error handling'
+  maintainability:
+    status: CONCERNS
+    notes: 'Good documentation and structure, but console.log statements and some code duplication present'
+
+recommendations:
+  immediate: # Must fix before production
+    - action: 'Add comprehensive unit tests for transport manual distribution functions'
+      refs: ['src/services/pricing.service.ts']
+    - action: 'Add integration tests for validation UI behavior'
+      refs: ['src/components/pricing/sections/PricingClientSelection.tsx']
+    - action: 'Remove debug console.log statements'
+      refs: ['src/components/pricing/sections/PricingCalculationSummary.tsx']
+    - action: 'Add error boundary for manual transport validation failures'
+      refs: ['src/components/pricing/sections/PricingClientSelection.tsx']
+  future: # Can be addressed later
+    - action: 'Add comprehensive ARIA labels for accessibility'
+      refs: ['src/components/pricing/sections/PricingClientSelection.tsx']
+    - action: 'Extract common transport calculation logic to reduce duplication'
+      refs: ['src/services/pricing.service.ts', 'src/components/pricing/sections/PricingCalculationSummary.tsx']
+    - action: 'Implement loading states for transport calculations'
+      refs: ['src/components/pricing/sections/PricingClientSelection.tsx']
+    - action: 'Replace any types with specific interfaces in calculation logic'
+      refs: ['src/components/pricing/sections/PricingCalculationSummary.tsx']
+
+# Risk matrix summary
+risk_summary:
+  data_loss: 2
+  calculation_error: 6
+  ui_performance: 2
+  backward_compatibility: 3
+  database_migration: 2
+  overall_risk_score: 6  # Acceptable risk level
+
+# Feature assessment
+feature_readiness:
+  functionality: excellent
+  integration: excellent
+  backward_compatibility: excellent
+  testing: inadequate
+  documentation: good
+  overall: concerns
+
+# Deployment recommendation
+deployment:
+  recommendation: 'STAGING_ONLY'
+  rationale: 'Feature works correctly but lacks testing coverage for financial calculations'
+  rollback_plan: 'Set use_flexible_transport=false for all quotes'
+  monitoring_required: ['transport calculation accuracy', 'validation error rates', 'user adoption metrics']

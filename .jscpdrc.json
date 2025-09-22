@@ -1,0 +1,11 @@
+{
+  "threshold": 50,
+  "minLines": 3,
+  "minTokens": 50,
+  "format": ["typescript", "tsx"],
+  "path": ["src/"],
+  "ignore": ["**/node_modules/**", "**/dist/**", "**/*.test.*"],
+  "reporters": ["console", "html"],
+  "output": "./docs/duplicate-report",
+  "gitignore": true
+}
