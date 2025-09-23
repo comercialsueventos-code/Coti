@@ -212,7 +212,7 @@ export const useQuotePricing = (input?: QuotePricingInput) => {
         totalTransportCost
       const marginAmount = subtotalWithTransport * (result.margin_percentage / 100)
       // 🤖 ULTRATHINK FIX: Respetar el flag enable_retention al recalcular con transporte
-      const taxRetentionPercentage = input.enable_retention ? (input.retention_percentage || 4) : 0
+      const taxRetentionPercentage = input.enable_retention ? (input.retention_percentage ?? 4) : 0
       const taxRetentionAmount = (subtotalWithTransport + marginAmount) * (taxRetentionPercentage / 100)
       const totalCostWithTransport = subtotalWithTransport + marginAmount - taxRetentionAmount
       

@@ -1069,7 +1069,7 @@ export class PricingService {
     const marginAmount = subtotal * (marginPercentage / 100)
 
     // Retención de impuestos - aplicar si está habilitada manualmente con valor personalizado
-    const taxRetentionPercentage = input.enable_retention ? (input.retention_percentage || 4) : 0
+    const taxRetentionPercentage = input.enable_retention ? (input.retention_percentage ?? 4) : 0
     const taxRetentionAmount = (subtotal + marginAmount) * (taxRetentionPercentage / 100)
 
     // Total final
