@@ -1,4 +1,5 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo, useCallback } from 'react'
+import { useDebounce } from '../../../hooks/useDebounce'
 import { useQueryClient } from '@tanstack/react-query'
 import { useQuotePricing, usePricingOptimization } from '../../../hooks/usePricing'
 import { useCreateQuote, QUOTES_QUERY_KEYS } from '../../../hooks/useQuotes'
@@ -116,7 +117,8 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
   const { data: eventSubcontracts = [] } = useEventSubcontracts({ is_available: true })
   const { data: disposableItems = [] } = useActiveDisposableItems()
 
-  const updateFormData = (field: keyof PricingFormData, value: any) => {
+  // ⚡ PERFORMANCE: Memoized updateFormData to prevent unnecessary re-renders
+  const updateFormData = useCallback((field: keyof PricingFormData, value: any) => {
     // Guard retention toggle to avoid stale percentages re-enabling on reload
     if (field === 'enableRetention') {
       const enable = Boolean(value)
@@ -128,21 +130,31 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
       return
     }
     setFormData(prev => ({ ...prev, [field]: value }))
-  }
+  }, [])
 
-  // Auto-update employee hours when event dates/times change
+  // ⚡ PERFORMANCE: Debounced time data for auto-updating employee hours
+  const debouncedTimeData = useDebounce({
+    eventStartDate: formData.eventStartDate,
+    eventEndDate: formData.eventEndDate,
+    eventStartTime: formData.eventStartTime,
+    eventEndTime: formData.eventEndTime,
+    selectedDays: formData.selectedDays,
+    dailySchedules: formData.dailySchedules
+  }, 500)
+
+  // Auto-update employee hours when event dates/times change (debounced)
   useEffect(() => {
     const eventHours = calculateEventHours()
-    const selectedDaysCount = formData.selectedDays?.length || 0
-    const isMultiDay = formData.eventStartDate && formData.eventEndDate && 
-      new Date(formData.eventEndDate) > new Date(formData.eventStartDate)
-    
+    const selectedDaysCount = debouncedTimeData.selectedDays?.length || 0
+    const isMultiDay = debouncedTimeData.eventStartDate && debouncedTimeData.eventEndDate &&
+      new Date(debouncedTimeData.eventEndDate) > new Date(debouncedTimeData.eventStartDate)
+
     // Check if we have the required time information
     const hasValidTimes = isMultiDay
-      ? selectedDaysCount > 0 && formData.dailySchedules.length > 0 && formData.dailySchedules.every(day => day.startTime && day.endTime)
-      : formData.eventStartTime && formData.eventEndTime
+      ? selectedDaysCount > 0 && debouncedTimeData.dailySchedules.length > 0 && debouncedTimeData.dailySchedules.every(day => day.startTime && day.endTime)
+      : debouncedTimeData.eventStartTime && debouncedTimeData.eventEndTime
 
-    if (formData.eventStartDate && formData.eventEndDate && hasValidTimes && eventHours > 0) {
+    if (debouncedTimeData.eventStartDate && debouncedTimeData.eventEndDate && hasValidTimes && eventHours > 0) {
       setFormData(prev => ({
         ...prev,
         employeeInputs: prev.employeeInputs.map(emp => ({
@@ -151,7 +163,7 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
         }))
       }))
     }
-  }, [formData.eventStartDate, formData.eventEndDate, formData.eventStartTime, formData.eventEndTime, formData.selectedDays, formData.dailySchedules])
+  }, [debouncedTimeData])
 
   // 🔥 FIX: Calculate hours per day (not total hours for multi-day events)
   const calculateHoursPerDay = () => {
@@ -284,11 +296,12 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
     }).format(amount)
   }
 
-  const addEmployee = () => {
+  // ⚡ PERFORMANCE: Memoized addEmployee to prevent unnecessary re-renders
+  const addEmployee = useCallback(() => {
     const eventHours = calculateEventHours()
     // Use the first available employee, fallback to mock if no real employees
     const defaultEmployee = employees.length > 0 ? employees[0] : mockEmployees[0]
-    
+
     const newEmployee: EmployeeInput = {
       employee: defaultEmployee,
       hours: eventHours > 0 ? eventHours : 1, // Default to 1 if no event hours calculated
@@ -301,28 +314,31 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
       ...prev,
       employeeInputs: [...prev.employeeInputs, newEmployee]
     }))
-  }
+  }, [employees, formData.eventStartDate, formData.eventEndDate, formData.eventStartTime, formData.eventEndTime, formData.selectedDays])
 
-  const removeEmployee = (index: number) => {
+  // ⚡ PERFORMANCE: Memoized removeEmployee to prevent unnecessary re-renders
+  const removeEmployee = useCallback((index: number) => {
     setFormData(prev => ({
       ...prev,
       employeeInputs: prev.employeeInputs.filter((_, i) => i !== index)
     }))
-  }
+  }, [])
 
-  const updateEmployee = (index: number, field: keyof EmployeeInput, value: any) => {
+  // ⚡ PERFORMANCE: Memoized updateEmployee to prevent unnecessary re-renders
+  const updateEmployee = useCallback((index: number, field: keyof EmployeeInput, value: any) => {
     setFormData(prev => ({
       ...prev,
-      employeeInputs: prev.employeeInputs.map((emp, i) => 
+      employeeInputs: prev.employeeInputs.map((emp, i) =>
         i === index ? { ...emp, [field]: value } : emp
       )
     }))
-  }
+  }, [])
 
-  const addProduct = () => {
+  // ⚡ PERFORMANCE: Memoized addProduct to prevent unnecessary re-renders
+  const addProduct = useCallback(() => {
     // Use the first available product, fallback to mock if no real products
     const defaultProduct = products.length > 0 ? products[0] : mockProducts[0]
-    
+
     const newProduct: ProductInput = {
       product: defaultProduct,
       quantity: defaultProduct.minimum_order || 1,
@@ -333,40 +349,42 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
       ...prev,
       productInputs: [...prev.productInputs, newProduct]
     }))
-  }
+  }, [products])
 
-  const removeProduct = (index: number) => {
+  // ⚡ PERFORMANCE: Memoized removeProduct to prevent unnecessary re-renders
+  const removeProduct = useCallback((index: number) => {
     setFormData(prev => {
       const removedProduct = prev.productInputs[index]
       const removedProductId = removedProduct?.product.id
-      
+
       return {
         ...prev,
         productInputs: prev.productInputs.filter((_, i) => i !== index),
         // Limpiar asociaciones de desechables con el producto eliminado
-        disposableItemInputs: prev.disposableItemInputs.map(item => 
-          item.associatedProductId === removedProductId 
+        disposableItemInputs: prev.disposableItemInputs.map(item =>
+          item.associatedProductId === removedProductId
             ? { ...item, associatedProductId: undefined }
             : item
         ),
         // Limpiar asociaciones de alquileres con el producto eliminado
-        machineryRentalInputs: prev.machineryRentalInputs.map(rental => 
-          rental.associatedProductId === removedProductId 
+        machineryRentalInputs: prev.machineryRentalInputs.map(rental =>
+          rental.associatedProductId === removedProductId
             ? { ...rental, associatedProductId: undefined }
             : rental
         )
       }
     })
-  }
+  }, [])
 
-  const updateProduct = (index: number, field: keyof ProductInput, value: any) => {
+  // ⚡ PERFORMANCE: Memoized updateProduct to prevent unnecessary re-renders
+  const updateProduct = useCallback((index: number, field: keyof ProductInput, value: any) => {
     setFormData(prev => ({
       ...prev,
-      productInputs: prev.productInputs.map((prod, i) => 
+      productInputs: prev.productInputs.map((prod, i) =>
         i === index ? { ...prod, [field]: value } : prod
       )
     }))
-  }
+  }, [])
 
   // Keep employee->product associations in sync when products list changes
   useEffect(() => {
