@@ -124,9 +124,22 @@ const QuoteEditor: React.FC<QuoteEditorProps> = ({ quoteId, onClose }) => {
     const productQuantityMap = new Map<number, number>()
     
     quote.items?.forEach(item => {
+      // Skip non-product items (disposables, machinery, rentals, subcontracts)
+      // These items use product_id for association but shouldn't be counted in product quantities
+      const isNonProductItem = item.item_type === 'variable' ||
+                               item.item_type === 'subcontract' ||
+                               item.variable_cost_reason === 'Maquinaria propia' ||
+                               item.variable_cost_reason === 'Alquiler de maquinaria externa' ||
+                               item.variable_cost_reason === 'Item desechable' ||
+                               (item.variable_cost_reason && item.variable_cost_reason.includes('Desechable'))
+
+      if (isNonProductItem) {
+        return // Skip this item, don't count it in product quantities
+      }
+
       // Use item.id as unique identifier for quick products (when product_id is null)
       const productKey = item.product_id || item.id
-      
+
       if (item.employee_id && productKey) {
         // Map employee to products
         if (!employeeProductMap.has(item.employee_id)) {
@@ -135,7 +148,7 @@ const QuoteEditor: React.FC<QuoteEditorProps> = ({ quoteId, onClose }) => {
         if (!employeeProductMap.get(item.employee_id)!.includes(productKey)) {
           employeeProductMap.get(item.employee_id)!.push(productKey)
         }
-        
+
         // Track product quantities
         productQuantityMap.set(productKey, (productQuantityMap.get(productKey) || 0) + item.quantity)
       } else if (productKey && !item.employee_id) {
