@@ -761,7 +761,7 @@ const PricingCalculationSummary: React.FC<PricingCalculationProps> = ({
                         {finalDisposableTotal > 0 && (
                           <ListItem>
                             <ListItemText 
-                              primary="🗑️ Desechables"
+                              primary="➕ Adicionales"
                               secondary={formatCurrency(finalDisposableTotal)}
                             />
                           </ListItem>

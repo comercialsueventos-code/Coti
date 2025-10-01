@@ -68,7 +68,7 @@ const DisposableItemsTab: React.FC<DisposableItemsTabProps> = ({
     <>
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
         <Typography variant="h6" color="info.main">
-          📦 Elementos Desechables e Independientes
+          ➕ Elementos Adicionales e Independientes
         </Typography>
         <Box sx={{ display: 'flex', gap: 1 }}>
           <Button
@@ -363,7 +363,7 @@ const DisposableItemsTab: React.FC<DisposableItemsTabProps> = ({
       {formData.disposableItemInputs.length > 0 && (
         <Box sx={{ mt: 2, p: 2, bgcolor: 'info.light', borderRadius: 1 }}>
           <Typography variant="h6" color="info.contrastText">
-            Total Elementos Desechables: {formatCurrency(disposableTotal)}
+            Total Elementos Adicionales: {formatCurrency(disposableTotal)}
           </Typography>
         </Box>
       )}

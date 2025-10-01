@@ -166,7 +166,7 @@ const PricingMachinerySection: React.FC<MachineryManagementProps> = ({
     <Card>
       <CardHeader 
         title="🏭 Maquinaria, Alquiler y Subcontratación"
-        subheader={`Total general: ${formatCurrency(grandTotal)} (Propios: ${formatCurrency(machineryTotal)} | Alquiler: ${formatCurrency(rentalTotal)} | Subcontrato: ${formatCurrency(subcontractTotal)} | Desechables: ${formatCurrency(disposableTotal)} | Productos Personalizados: ${formatCurrency(customProductsTotal)})`}
+        subheader={`Total general: ${formatCurrency(grandTotal)} (Propios: ${formatCurrency(machineryTotal)} | Alquiler: ${formatCurrency(rentalTotal)} | Subcontrato: ${formatCurrency(subcontractTotal)} | Adicionales: ${formatCurrency(disposableTotal)} | Productos Personalizados: ${formatCurrency(customProductsTotal)})`}
       />
       <CardContent>
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -189,9 +189,9 @@ const PricingMachinerySection: React.FC<MachineryManagementProps> = ({
               id="machinery-tab-2"
               aria-controls="machinery-tabpanel-2"
             />
-            <Tab 
-              icon={<InventoryIcon />} 
-              label="Desechables" 
+            <Tab
+              icon={<InventoryIcon />}
+              label="Adicionales"
               id="machinery-tab-3"
               aria-controls="machinery-tabpanel-3"
             />
@@ -387,7 +387,7 @@ const PricingMachinerySection: React.FC<MachineryManagementProps> = ({
           />
         </TabPanel>
 
-        {/* Desechables Tab */}
+        {/* Adicionales Tab */}
         <TabPanel value={activeTab} index={3}>
           <DisposableItemsTab
             formData={formData}
