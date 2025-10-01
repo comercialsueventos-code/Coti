@@ -97,6 +97,10 @@ const PricingProductSelection: React.FC<ProductManagementProps> = ({
                           const product = products.find(prod => prod.id === Number(e.target.value))
                           if (product) updateProduct(index, 'product', product)
                         }}
+                        renderValue={(value) => {
+                          const product = products.find(p => p.id === value)
+                          return product ? product.name : 'Seleccionar producto'
+                        }}
                       >
                         {products.map(prod => (
                           <MenuItem key={prod.id} value={prod.id}>
