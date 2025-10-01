@@ -849,36 +849,36 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
       if (actionType === 'UPDATE' && editingQuoteId) {
         // 🤖 ULTRATHINK: UPDATE existing quote
         // Updating existing quote
-        
-        // 🔥 DEBUG: Log retention values from result (DISABLED)
-        // console.log('🔍 DEBUG RETENTION VALUES:')
-        // console.log('- result.tax_retention_percentage:', result.tax_retention_percentage)
-        // console.log('- result.tax_retention_amount:', result.tax_retention_amount)
-        // console.log('- formData.enableRetention:', formData.enableRetention)
-        // console.log('- formData.retentionPercentage:', formData.retentionPercentage)
-        
-        // Calculate correct subtotal summing all components (like financial summary does)
-        const employeesTotal = result.employees_subtotal || 0
-        const productsTotal = result.products_subtotal || 0
-        const transportTotal = result.transport_subtotal || 0
+
+        // Calculate totals from formData (same as financial summary)
+        const employeesTotal = formData.employeeInputs?.reduce((total, input) => {
+          const baseCost = calculateEmployeeCost(input.employee, eventHours)
+          return total + baseCost + (input.extraCost || 0)
+        }, 0) || 0
+
+        const productsTotal = formData.productInputs?.reduce((total, input) => {
+          const unitPrice = input.isVariable && input.customPrice ? input.customPrice : input.product.base_price
+          if (input.product.pricing_type === 'measurement') {
+            return total + (unitPrice * input.quantity * (input.unitsPerProduct || 1))
+          }
+          return total + (unitPrice * input.quantity)
+        }, 0) || 0
+
+        const transportTotal = formData.selectedTransportZones?.reduce((total, zone) => {
+          return total + zone.base_cost
+        }, 0) || (formData.selectedTransportZone ? formData.selectedTransportZone.base_cost : 0)
 
         const machineryTotal = formData.machineryInputs?.reduce((total, input) => {
           const baseCost = input.hours >= 8 ? input.machinery.daily_rate : input.machinery.hourly_rate * input.hours
-          const operatorCost = input.includeOperator && input.machinery.operator_hourly_rate
-            ? input.machinery.operator_hourly_rate * input.hours
-            : 0
+          const operatorCost = input.includeOperator && input.machinery.operator_hourly_rate ? input.machinery.operator_hourly_rate * input.hours : 0
           const setupCost = input.setupRequired ? (input.machinery.setup_cost || 0) : 0
           return total + baseCost + operatorCost + setupCost
         }, 0) || 0
 
         const rentalTotal = formData.machineryRentalInputs?.reduce((total, input) => {
-          if (input.isCustomCost && input.customTotalCost !== undefined) {
-            return total + input.customTotalCost
-          }
+          if (input.isCustomCost && input.customTotalCost !== undefined) return total + input.customTotalCost
           const baseCost = input.hours >= 8 ? input.machineryRental.sue_daily_rate : input.machineryRental.sue_hourly_rate * input.hours
-          const operatorCost = input.includeOperator && input.machineryRental.operator_cost
-            ? input.machineryRental.operator_cost * input.hours
-            : 0
+          const operatorCost = input.includeOperator && input.machineryRental.operator_cost ? input.machineryRental.operator_cost * input.hours : 0
           const setupCost = input.machineryRental.setup_cost || 0
           const deliveryCost = input.includeDelivery ? (input.machineryRental.delivery_cost || 0) : 0
           const pickupCost = input.includePickup ? (input.machineryRental.pickup_cost || 0) : 0
@@ -890,21 +890,15 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
         }, 0) || 0
 
         const disposableTotal = formData.disposableItemInputs?.reduce((total, input) => {
-          if (input.isCustomTotalCost && input.customTotalCost !== undefined) {
-            return total + input.customTotalCost
-          }
+          if (input.isCustomTotalCost && input.customTotalCost !== undefined) return total + input.customTotalCost
           const unitPrice = input.isCustomPrice && input.customPrice ? input.customPrice : input.disposableItem.sale_price
           const actualQuantity = Math.max(input.quantity, input.disposableItem.minimum_quantity)
           return total + (unitPrice * actualQuantity)
         }, 0) || 0
 
         const correctSubtotal = employeesTotal + productsTotal + transportTotal + machineryTotal + rentalTotal + subcontractTotal + disposableTotal
-
-        // Calculate margin
         const marginPct = (formData.marginPercentage ?? 0) / 100
         const correctMarginAmount = correctSubtotal * marginPct
-
-        // Calculate total with retention if applicable
         const subtotalWithMargin = correctSubtotal + correctMarginAmount
         const retentionPct = (result.tax_retention_percentage || 0) / 100
         const correctRetentionAmount = subtotalWithMargin * retentionPct
@@ -1239,38 +1233,38 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
         await queryClient.invalidateQueries({ queryKey: QUOTES_QUERY_KEYS.statistics() })
         // Cache invalidation complete
       } else {
-        // 🤖 ULTRATHINK: CREATE new quote  
+        // 🤖 ULTRATHINK: CREATE new quote
         // Creating new quote
-        
-        // 🔥 DEBUG: Log retention values from result (CREATE) (DISABLED)
-        // console.log('🔍 DEBUG RETENTION VALUES (CREATE):')
-        // console.log('- result.tax_retention_percentage:', result.tax_retention_percentage)
-        // console.log('- result.tax_retention_amount:', result.tax_retention_amount)
-        // console.log('- formData.enableRetention:', formData.enableRetention)
-        // console.log('- formData.retentionPercentage:', formData.retentionPercentage)
 
-        // Calculate correct subtotal summing all components (like financial summary does)
-        const employeesTotal = result.employees_subtotal || 0
-        const productsTotal = result.products_subtotal || 0
-        const transportTotal = result.transport_subtotal || 0
+        // Calculate totals from formData (same as financial summary)
+        const employeesTotal = formData.employeeInputs?.reduce((total, input) => {
+          const baseCost = calculateEmployeeCost(input.employee, eventHours)
+          return total + baseCost + (input.extraCost || 0)
+        }, 0) || 0
+
+        const productsTotal = formData.productInputs?.reduce((total, input) => {
+          const unitPrice = input.isVariable && input.customPrice ? input.customPrice : input.product.base_price
+          if (input.product.pricing_type === 'measurement') {
+            return total + (unitPrice * input.quantity * (input.unitsPerProduct || 1))
+          }
+          return total + (unitPrice * input.quantity)
+        }, 0) || 0
+
+        const transportTotal = formData.selectedTransportZones?.reduce((total, zone) => {
+          return total + zone.base_cost
+        }, 0) || (formData.selectedTransportZone ? formData.selectedTransportZone.base_cost : 0)
 
         const machineryTotal = formData.machineryInputs?.reduce((total, input) => {
           const baseCost = input.hours >= 8 ? input.machinery.daily_rate : input.machinery.hourly_rate * input.hours
-          const operatorCost = input.includeOperator && input.machinery.operator_hourly_rate
-            ? input.machinery.operator_hourly_rate * input.hours
-            : 0
+          const operatorCost = input.includeOperator && input.machinery.operator_hourly_rate ? input.machinery.operator_hourly_rate * input.hours : 0
           const setupCost = input.setupRequired ? (input.machinery.setup_cost || 0) : 0
           return total + baseCost + operatorCost + setupCost
         }, 0) || 0
 
         const rentalTotal = formData.machineryRentalInputs?.reduce((total, input) => {
-          if (input.isCustomCost && input.customTotalCost !== undefined) {
-            return total + input.customTotalCost
-          }
+          if (input.isCustomCost && input.customTotalCost !== undefined) return total + input.customTotalCost
           const baseCost = input.hours >= 8 ? input.machineryRental.sue_daily_rate : input.machineryRental.sue_hourly_rate * input.hours
-          const operatorCost = input.includeOperator && input.machineryRental.operator_cost
-            ? input.machineryRental.operator_cost * input.hours
-            : 0
+          const operatorCost = input.includeOperator && input.machineryRental.operator_cost ? input.machineryRental.operator_cost * input.hours : 0
           const setupCost = input.machineryRental.setup_cost || 0
           const deliveryCost = input.includeDelivery ? (input.machineryRental.delivery_cost || 0) : 0
           const pickupCost = input.includePickup ? (input.machineryRental.pickup_cost || 0) : 0
@@ -1282,21 +1276,15 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
         }, 0) || 0
 
         const disposableTotal = formData.disposableItemInputs?.reduce((total, input) => {
-          if (input.isCustomTotalCost && input.customTotalCost !== undefined) {
-            return total + input.customTotalCost
-          }
+          if (input.isCustomTotalCost && input.customTotalCost !== undefined) return total + input.customTotalCost
           const unitPrice = input.isCustomPrice && input.customPrice ? input.customPrice : input.disposableItem.sale_price
           const actualQuantity = Math.max(input.quantity, input.disposableItem.minimum_quantity)
           return total + (unitPrice * actualQuantity)
         }, 0) || 0
 
         const correctSubtotal = employeesTotal + productsTotal + transportTotal + machineryTotal + rentalTotal + subcontractTotal + disposableTotal
-
-        // Calculate margin
         const marginPct = (formData.marginPercentage ?? 0) / 100
         const correctMarginAmount = correctSubtotal * marginPct
-
-        // Calculate total with retention if applicable
         const subtotalWithMargin = correctSubtotal + correctMarginAmount
         const retentionPct = (result.tax_retention_percentage || 0) / 100
         const correctRetentionAmount = subtotalWithMargin * retentionPct
