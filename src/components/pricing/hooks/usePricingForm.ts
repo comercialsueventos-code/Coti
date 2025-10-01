@@ -632,7 +632,7 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
           retention_percentage: retentionPct,
           margin_percentage: formData.marginPercentage
         }
-        console.log('🔍 INPUT TO PRICING SERVICE:', payload)
+        // console.log('🔍 INPUT TO PRICING SERVICE:', payload) // Debug log disabled
         return enableRetention
       })(),
       retention_percentage: retentionPct,
@@ -850,12 +850,12 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
         // 🤖 ULTRATHINK: UPDATE existing quote
         // Updating existing quote
         
-        // 🔥 DEBUG: Log retention values from result
-        console.log('🔍 DEBUG RETENTION VALUES:')
-        console.log('- result.tax_retention_percentage:', result.tax_retention_percentage)
-        console.log('- result.tax_retention_amount:', result.tax_retention_amount)
-        console.log('- formData.enableRetention:', formData.enableRetention)
-        console.log('- formData.retentionPercentage:', formData.retentionPercentage)
+        // 🔥 DEBUG: Log retention values from result (DISABLED)
+        // console.log('🔍 DEBUG RETENTION VALUES:')
+        // console.log('- result.tax_retention_percentage:', result.tax_retention_percentage)
+        // console.log('- result.tax_retention_amount:', result.tax_retention_amount)
+        // console.log('- formData.enableRetention:', formData.enableRetention)
+        // console.log('- formData.retentionPercentage:', formData.retentionPercentage)
         
         // Create quote data for update (subset of fields)
         const updateData = {
@@ -1187,12 +1187,12 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
         // 🤖 ULTRATHINK: CREATE new quote  
         // Creating new quote
         
-        // 🔥 DEBUG: Log retention values from result (CREATE)
-        console.log('🔍 DEBUG RETENTION VALUES (CREATE):')
-        console.log('- result.tax_retention_percentage:', result.tax_retention_percentage)
-        console.log('- result.tax_retention_amount:', result.tax_retention_amount)
-        console.log('- formData.enableRetention:', formData.enableRetention)
-        console.log('- formData.retentionPercentage:', formData.retentionPercentage)
+        // 🔥 DEBUG: Log retention values from result (CREATE) (DISABLED)
+        // console.log('🔍 DEBUG RETENTION VALUES (CREATE):')
+        // console.log('- result.tax_retention_percentage:', result.tax_retention_percentage)
+        // console.log('- result.tax_retention_amount:', result.tax_retention_amount)
+        // console.log('- formData.enableRetention:', formData.enableRetention)
+        // console.log('- formData.retentionPercentage:', formData.retentionPercentage)
         
         const quoteData: CreateQuoteData = {
           client_id: formData.selectedClient.id,
@@ -1399,16 +1399,16 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
         return []
       })()
       
-      // Log the quote items with employee associations for debugging
-      console.log('Quote items with employee-product associations:', 
-        quoteData.quote_items.map(item => ({
-          product_id: item.product_id,
-          employee_id: item.employee_id,
-          description: item.description,
-          quantity: item.quantity,
-          total_price: item.total_price
-        }))
-      )
+      // Log the quote items with employee associations for debugging (DISABLED)
+      // console.log('Quote items with employee-product associations:',
+      //   quoteData.quote_items.map(item => ({
+      //     product_id: item.product_id,
+      //     employee_id: item.employee_id,
+      //     description: item.description,
+      //     quantity: item.quantity,
+      //     total_price: item.total_price
+      //   }))
+      // )
 
         // 🤖 ULTRATHINK FIX: Pass data in correct format expected by useCreateQuote hook
         // Sending new quote to database
