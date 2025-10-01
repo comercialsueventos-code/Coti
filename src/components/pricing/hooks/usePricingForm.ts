@@ -938,10 +938,12 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
                 quantity: quantityPerEmployee,
                 units_per_product: product.unitsPerProduct,
                 unit_price: unitPrice,
-                total_price: (unitPrice * quantityPerEmployee) + employeeCost,
+                total_price: (unitPrice * quantityPerEmployee) + employeeCost + (empInput.extraCost || 0),
                 hours_worked: eventHours,
                 shift_type: eventHours > 12 ? 'full_day' : eventHours > 4 ? 'afternoon' : 'morning',
-                variable_cost_reason: product.isVariable ? product.customReason : undefined
+                variable_cost_reason: product.isVariable ? product.customReason : undefined,
+                extra_cost: empInput.extraCost || 0,
+                extra_cost_reason: empInput.extraCostReason || undefined
               } as CreateQuoteItemData
             }).filter(Boolean)
           ),
