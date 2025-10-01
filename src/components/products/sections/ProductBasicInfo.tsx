@@ -74,6 +74,7 @@ const ProductBasicInfo: React.FC<ProductBasicInfoProps> = ({
             value={formData.unit}
             label={formData.pricing_type === 'measurement' ? 'Unidad de medida' : 'Tipo de producto'}
             onChange={(e) => onFormDataChange('unit', e.target.value)}
+            renderValue={(value) => value || 'Seleccionar...'}
           >
             {UNITS_BY_TYPE[formData.pricing_type].map((unit) => (
               <MenuItem key={unit} value={unit}>

@@ -34,6 +34,11 @@ const ProductPricing: React.FC<ProductPricingProps> = ({
             value={formData.pricing_type}
             label="Tipo de Pricing"
             onChange={(e) => onFormDataChange('pricing_type', e.target.value)}
+            renderValue={(value) => {
+              if (value === 'measurement') return '📏 Precio por unidad de medida'
+              if (value === 'unit') return '📦 Precio por unidad completa'
+              return 'Seleccionar tipo'
+            }}
           >
             <MenuItem value="unit">
               📦 Precio por unidad completa
