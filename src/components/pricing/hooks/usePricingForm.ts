@@ -883,10 +883,11 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
           return total + (unitPrice * actualQuantity)
         }, 0) || 0
 
-        const correctSubtotal = employeesTotal + productsTotal + transportTotal + machineryTotal + rentalTotal + subcontractTotal + disposableTotal
+        // This is the EXACT fallback calculation used in PricingCalculationSummary line 888
+        const fallbackSubtotal = employeesTotal + productsTotal + transportTotal + machineryTotal + rentalTotal + subcontractTotal + disposableTotal
         const marginPct = (formData.marginPercentage ?? 0) / 100
-        const correctMarginAmount = correctSubtotal * marginPct
-        const subtotalWithMargin = correctSubtotal + correctMarginAmount
+        const correctMarginAmount = fallbackSubtotal * marginPct
+        const subtotalWithMargin = fallbackSubtotal + correctMarginAmount
         const retentionPct = (result.tax_retention_percentage || 0) / 100
         const correctRetentionAmount = subtotalWithMargin * retentionPct
         const correctTotalCost = subtotalWithMargin - correctRetentionAmount
@@ -910,7 +911,7 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
           use_flexible_transport: formData.useFlexibleTransport || false, // Toggle para distribución manual
           transport_allocations: formData.transportAllocations || [], // Asignaciones manuales por producto
           multiple_transport_zones: formData.selectedTransportZones?.length > 0 ? formData.selectedTransportZones : null, // Nueva implementación
-          subtotal: correctSubtotal,
+          subtotal: fallbackSubtotal,
           transport_cost: transportTotal,
           margin_percentage: formData.marginPercentage ?? 30,
           margin_amount: correctMarginAmount,
@@ -1256,10 +1257,11 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
           return total + (unitPrice * actualQuantity)
         }, 0) || 0
 
-        const correctSubtotal = employeesTotal + productsTotal + transportTotal + machineryTotal + rentalTotal + subcontractTotal + disposableTotal
+        // This is the EXACT fallback calculation used in PricingCalculationSummary line 888
+        const fallbackSubtotal = employeesTotal + productsTotal + transportTotal + machineryTotal + rentalTotal + subcontractTotal + disposableTotal
         const marginPct = (formData.marginPercentage ?? 0) / 100
-        const correctMarginAmount = correctSubtotal * marginPct
-        const subtotalWithMargin = correctSubtotal + correctMarginAmount
+        const correctMarginAmount = fallbackSubtotal * marginPct
+        const subtotalWithMargin = fallbackSubtotal + correctMarginAmount
         const retentionPct = (result.tax_retention_percentage || 0) / 100
         const correctRetentionAmount = subtotalWithMargin * retentionPct
         const correctTotalCost = subtotalWithMargin - correctRetentionAmount
