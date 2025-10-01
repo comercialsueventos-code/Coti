@@ -101,62 +101,63 @@ const PricingCalculationSummary: React.FC<PricingCalculationProps> = ({
   // Use fixedResult instead of result for all calculations
   const actualResult = fixedResult || result
 
-  React.useEffect(() => {
-    if (actualResult && actualResult.subtotal && actualResult.total_cost) {
-      console.log('🔍 ULTRATHINK FULL CALCULATION AUDIT:')
-      console.log('=== BACKEND RESULT ===')
-      console.log('- Subtotal:', actualResult.subtotal)
-      console.log('- Total Cost:', actualResult.total_cost)
-      console.log('- Employees subtotal:', actualResult.employees_subtotal || 0)
-      console.log('- Products subtotal:', actualResult.products_subtotal || 0)
-      console.log('- Transport subtotal:', actualResult.transport_subtotal || 0)
-      console.log('- Machinery subtotal:', actualResult.machinery_subtotal || 0)
-      console.log('- Rental subtotal:', actualResult.machinery_rental_subtotal || 0)
-      console.log('- Subcontract subtotal:', actualResult.subcontract_subtotal || 0)
-      console.log('- Disposable subtotal:', actualResult.disposable_subtotal || 0)
-      console.log('- Margin %:', actualResult.margin_percentage || 0)
-      console.log('- Margin amount:', actualResult.margin_amount || 0)
-      console.log('- Tax retention %:', actualResult.tax_retention_percentage || 0)
-      console.log('- Tax retention amount:', actualResult.tax_retention_amount || 0)
-      
-      console.log('=== MANUAL CALCULATION ===')
-      const manualSubtotal = (actualResult.employees_subtotal || 0) + 
-                            (actualResult.products_subtotal || 0) + 
-                            (actualResult.transport_subtotal || 0) + 
-                            (actualResult.machinery_subtotal || 0) + 
-                            (actualResult.machinery_rental_subtotal || 0) + 
-                            (actualResult.subcontract_subtotal || 0) + 
-                            (actualResult.disposable_subtotal || 0)
-      
-      const manualMargin = manualSubtotal * ((actualResult.margin_percentage || 0) / 100)
-      const manualRetention = (manualSubtotal + manualMargin) * ((actualResult.tax_retention_percentage || 0) / 100)
-      const manualTotal = manualSubtotal + manualMargin - manualRetention
-      
-      console.log('- Manual subtotal sum:', manualSubtotal)
-      console.log('- Manual margin calc:', manualMargin)
-      console.log('- Manual retention calc:', manualRetention)
-      console.log('- Manual total calc:', manualTotal)
-      
-      console.log('=== DIFFERENCES ===')
-      console.log('- Subtotal diff:', Math.abs(actualResult.subtotal - manualSubtotal))
-      console.log('- Total diff:', Math.abs(actualResult.total_cost - manualTotal))
-      
-      if (Math.abs(actualResult.total_cost - manualTotal) > 0.01) {
-        console.warn('🚨 MAJOR CALCULATION DISCREPANCY:')
-        console.warn('- Backend total:', actualResult.total_cost)
-        console.warn('- Manual calculation:', manualTotal)
-        console.warn('- Difference:', Math.abs(actualResult.total_cost - manualTotal))
-      }
+  // 🔇 DEBUG LOGS DISABLED - Uncomment to enable calculation audit
+  // React.useEffect(() => {
+  //   if (actualResult && actualResult.subtotal && actualResult.total_cost) {
+  //     console.log('🔍 ULTRATHINK FULL CALCULATION AUDIT:')
+  //     console.log('=== BACKEND RESULT ===')
+  //     console.log('- Subtotal:', actualResult.subtotal)
+  //     console.log('- Total Cost:', actualResult.total_cost)
+  //     console.log('- Employees subtotal:', actualResult.employees_subtotal || 0)
+  //     console.log('- Products subtotal:', actualResult.products_subtotal || 0)
+  //     console.log('- Transport subtotal:', actualResult.transport_subtotal || 0)
+  //     console.log('- Machinery subtotal:', actualResult.machinery_subtotal || 0)
+  //     console.log('- Rental subtotal:', actualResult.machinery_rental_subtotal || 0)
+  //     console.log('- Subcontract subtotal:', actualResult.subcontract_subtotal || 0)
+  //     console.log('- Disposable subtotal:', actualResult.disposable_subtotal || 0)
+  //     console.log('- Margin %:', actualResult.margin_percentage || 0)
+  //     console.log('- Margin amount:', actualResult.margin_amount || 0)
+  //     console.log('- Tax retention %:', actualResult.tax_retention_percentage || 0)
+  //     console.log('- Tax retention amount:', actualResult.tax_retention_amount || 0)
+  //
+  //     console.log('=== MANUAL CALCULATION ===')
+  //     const manualSubtotal = (actualResult.employees_subtotal || 0) +
+  //                           (actualResult.products_subtotal || 0) +
+  //                           (actualResult.transport_subtotal || 0) +
+  //                           (actualResult.machinery_subtotal || 0) +
+  //                           (actualResult.machinery_rental_subtotal || 0) +
+  //                           (actualResult.subcontract_subtotal || 0) +
+  //                           (actualResult.disposable_subtotal || 0)
+  //
+  //     const manualMargin = manualSubtotal * ((actualResult.margin_percentage || 0) / 100)
+  //     const manualRetention = (manualSubtotal + manualMargin) * ((actualResult.tax_retention_percentage || 0) / 100)
+  //     const manualTotal = manualSubtotal + manualMargin - manualRetention
+  //
+  //     console.log('- Manual subtotal sum:', manualSubtotal)
+  //     console.log('- Manual margin calc:', manualMargin)
+  //     console.log('- Manual retention calc:', manualRetention)
+  //     console.log('- Manual total calc:', manualTotal)
+  //
+  //     console.log('=== DIFFERENCES ===')
+  //     console.log('- Subtotal diff:', Math.abs(actualResult.subtotal - manualSubtotal))
+  //     console.log('- Total diff:', Math.abs(actualResult.total_cost - manualTotal))
+  //
+  //     if (Math.abs(actualResult.total_cost - manualTotal) > 0.01) {
+  //       console.warn('🚨 MAJOR CALCULATION DISCREPANCY:')
+  //       console.warn('- Backend total:', actualResult.total_cost)
+  //       console.warn('- Manual calculation:', manualTotal)
+  //       console.warn('- Difference:', Math.abs(actualResult.total_cost - manualTotal))
+  //     }
 
-      // Log saved quote information for debugging external display
-      if (savedQuoteNumber && savedQuoteId) {
-        console.log('=== SAVED QUOTE INFO ===')
-        console.log('- Quote Number:', savedQuoteNumber)
-        console.log('- Quote ID:', savedQuoteId)
-        console.log('- Backend Total (should match external):', actualResult.total_cost)
-      }
-    }
-  }, [result, savedQuoteNumber, savedQuoteId])
+  //     // Log saved quote information for debugging external display
+  //     if (savedQuoteNumber && savedQuoteId) {
+  //       console.log('=== SAVED QUOTE INFO ===')
+  //       console.log('- Quote Number:', savedQuoteNumber)
+  //       console.log('- Quote ID:', savedQuoteId)
+  //       console.log('- Backend Total (should match external):', actualResult.total_cost)
+  //     }
+  //   }
+  // }, [result, savedQuoteNumber, savedQuoteId])
 
   const handleGeneratePDF = async () => {
     console.log('🎨 DEBUG: Iniciando generación PDF')
