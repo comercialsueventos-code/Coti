@@ -83,8 +83,9 @@ const QuoteEditor: React.FC<QuoteEditorProps> = ({ quoteId, onClose }) => {
     // ULTRATHINK FIX: Find client or use quote's client data if clients array not loaded yet
     const selectedClient = clients.find(c => c.id === quote.client_id) || quote.client || null
     
-    // Find primary contact for the client
-    const selectedContact = selectedClient?.contacts?.find(c => c.is_primary) || 
+    // Find contact: use saved contact_id first, fallback to primary
+    const selectedContact = (quote.contact_id && selectedClient?.contacts?.find(c => c.id === quote.contact_id)) ||
+                           selectedClient?.contacts?.find(c => c.is_primary) ||
                            (selectedClient?.contacts && selectedClient.contacts[0]) ||
                            null
     

@@ -1196,6 +1196,7 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
         
         const quoteData: CreateQuoteData = {
           client_id: formData.selectedClient.id,
+          contact_id: formData.selectedContact?.id || null,
           client_type: formData.selectedClient.type || 'social',
           event_title: formData.eventName || 'Evento sin título',
           event_date: formData.eventStartDate,
