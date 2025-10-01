@@ -405,6 +405,7 @@ const PricingClientSelection: React.FC<PricingFormProps> = ({ formData, updateFo
                     const contact = formData.selectedClient?.contacts?.find(c => c.name === contactName)
                     updateFormData('selectedContact', contact || null)
                   }}
+                  renderValue={(value) => value || 'Seleccionar contacto'}
                 >
                   <MenuItem value="">Seleccionar contacto</MenuItem>
                   {/* New contacts array */}
