@@ -850,23 +850,10 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
         // 🤖 ULTRATHINK: UPDATE existing quote
         // Updating existing quote
 
-        // Calculate totals from formData (same as financial summary)
-        const employeesTotal = formData.employeeInputs?.reduce((total, input) => {
-          const baseCost = calculateEmployeeCost(input.employee, eventHours)
-          return total + baseCost + (input.extraCost || 0)
-        }, 0) || 0
-
-        const productsTotal = formData.productInputs?.reduce((total, input) => {
-          const unitPrice = input.isVariable && input.customPrice ? input.customPrice : input.product.base_price
-          if (input.product.pricing_type === 'measurement') {
-            return total + (unitPrice * input.quantity * (input.unitsPerProduct || 1))
-          }
-          return total + (unitPrice * input.quantity)
-        }, 0) || 0
-
-        const transportTotal = formData.selectedTransportZones?.reduce((total, zone) => {
-          return total + zone.base_cost
-        }, 0) || (formData.selectedTransportZone ? formData.selectedTransportZone.base_cost : 0)
+        // Use backend calculated totals (same as financial summary does)
+        const employeesTotal = result.employees_subtotal || 0
+        const productsTotal = result.products_subtotal || 0
+        const transportTotal = result.transport_subtotal || 0
 
         const machineryTotal = formData.machineryInputs?.reduce((total, input) => {
           const baseCost = input.hours >= 8 ? input.machinery.daily_rate : input.machinery.hourly_rate * input.hours
@@ -1236,23 +1223,10 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
         // 🤖 ULTRATHINK: CREATE new quote
         // Creating new quote
 
-        // Calculate totals from formData (same as financial summary)
-        const employeesTotal = formData.employeeInputs?.reduce((total, input) => {
-          const baseCost = calculateEmployeeCost(input.employee, eventHours)
-          return total + baseCost + (input.extraCost || 0)
-        }, 0) || 0
-
-        const productsTotal = formData.productInputs?.reduce((total, input) => {
-          const unitPrice = input.isVariable && input.customPrice ? input.customPrice : input.product.base_price
-          if (input.product.pricing_type === 'measurement') {
-            return total + (unitPrice * input.quantity * (input.unitsPerProduct || 1))
-          }
-          return total + (unitPrice * input.quantity)
-        }, 0) || 0
-
-        const transportTotal = formData.selectedTransportZones?.reduce((total, zone) => {
-          return total + zone.base_cost
-        }, 0) || (formData.selectedTransportZone ? formData.selectedTransportZone.base_cost : 0)
+        // Use backend calculated totals (same as financial summary does)
+        const employeesTotal = result.employees_subtotal || 0
+        const productsTotal = result.products_subtotal || 0
+        const transportTotal = result.transport_subtotal || 0
 
         const machineryTotal = formData.machineryInputs?.reduce((total, input) => {
           const baseCost = input.hours >= 8 ? input.machinery.daily_rate : input.machinery.hourly_rate * input.hours
