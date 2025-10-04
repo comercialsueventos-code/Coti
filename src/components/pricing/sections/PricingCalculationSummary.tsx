@@ -891,42 +891,10 @@ const PricingCalculationSummary: React.FC<PricingCalculationProps> = ({
                     />
                   </ListItem>
                   <ListItem>
-                    <ListItemText 
+                    <ListItemText
                       primary={`Margen ${formatPercentage(actualResult.margin_percentage)}${formData.marginMode === 'per_line' ? ' · por línea' : ''}`}
                       secondary={(() => {
                         const pct = (actualResult.margin_percentage || 0) / 100
-                        const computePerLineMargin = () => {
-                          // Build product base map from product totals
-                          const baseMap = new Map<number, number>()
-                          const products = (result.products || []) as any[]
-                          products.forEach((p) => {
-                            if (typeof p.product_id === 'number') {
-                              baseMap.set(p.product_id, (baseMap.get(p.product_id) || 0) + (p.total_cost || 0))
-                            }
-                          })
-                          // Add transport distribution if available
-                          const dist = (result.multipleTransportZones?.[0]?.distribution || result.transport?.distribution || []) as Array<{product_id: number|null, cost: number}>
-                          if (Array.isArray(dist) && dist.length > 0) {
-                            const productIds = products.map(p => p.product_id).filter((id: any) => typeof id === 'number')
-                            const spread = (cost: number) => {
-                              if (productIds.length === 0) return
-                              const share = cost / productIds.length
-                              productIds.forEach((pid: number) => {
-                                baseMap.set(pid, (baseMap.get(pid) || 0) + share)
-                              })
-                            }
-                            dist.forEach(d => {
-                              if (d.product_id && typeof d.product_id === 'number') {
-                                baseMap.set(d.product_id, (baseMap.get(d.product_id) || 0) + (d.cost || 0))
-                              } else if (d.cost) {
-                                spread(d.cost)
-                              }
-                            })
-                          }
-                          let sum = 0
-                          baseMap.forEach((base) => { sum += base * pct })
-                          return sum
-                        }
 
                         // Prefer backend margin unless per-line mode is enabled
                         if (formData.marginMode !== 'per_line') {
@@ -937,9 +905,10 @@ const PricingCalculationSummary: React.FC<PricingCalculationProps> = ({
                           return formatCurrency(subtotal * pct)
                         }
 
-                        // Per-line margin mode
-                        const perLine = computePerLineMargin()
-                        return formatCurrency(perLine)
+                        // Per-line margin mode: apply margin to the entire subtotal
+                        // (each line has margin applied individually, sum equals margin on total subtotal)
+                        const subtotal = actualResult.subtotal || 0
+                        return formatCurrency(subtotal * pct)
                       })()}
                     />
                   </ListItem>
@@ -956,24 +925,7 @@ const PricingCalculationSummary: React.FC<PricingCalculationProps> = ({
                           // Fallback: calculate retention manually
                           const subtotal = actualResult.subtotal || 0
                           const pct = (actualResult.margin_percentage || 0) / 100
-                          let margin = actualResult.margin_amount || (subtotal * pct)
-                          if (formData.marginMode === 'per_line') {
-                            // Recompute margin per-line for accurate retention
-                            const products = (result.products || []) as any[]
-                            let perLine = products.reduce((sum, p) => sum + (p.total_cost || 0) * pct, 0)
-                            // Include transport distribution if available
-                            const dist = (result.multipleTransportZones?.[0]?.distribution || result.transport?.distribution || []) as Array<{product_id: number|null, cost: number}>
-                            if (Array.isArray(dist) && dist.length > 0) {
-                              const productIds = products.map(p => p.product_id).filter((id: any) => typeof id === 'number')
-                              const spread = (cost: number) => {
-                                if (productIds.length === 0) return 0
-                                return cost // It will be multiplied by pct below after distributing conceptually
-                              }
-                              const transportTotal = dist.reduce((acc, d) => acc + (d.cost || 0), 0)
-                              perLine += transportTotal * pct // approximate per-line margin for transport
-                            }
-                            margin = perLine
-                          }
+                          const margin = subtotal * pct
                           const retention = (subtotal + margin) * (actualResult.tax_retention_percentage / 100)
                           return `-${formatCurrency(retention)}`
                         })()}
@@ -999,18 +951,7 @@ const PricingCalculationSummary: React.FC<PricingCalculationProps> = ({
                             // Fallback: calculate total manually
                             const subtotal = actualResult.subtotal || 0
                             const pct = (actualResult.margin_percentage || 0) / 100
-                            let margin = actualResult.margin_amount || (subtotal * pct)
-                            if (formData.marginMode === 'per_line') {
-                              // Approximate per-line margin (products + transport)
-                              const products = (result.products || []) as any[]
-                              let perLine = products.reduce((sum, p) => sum + (p.total_cost || 0) * pct, 0)
-                              const dist = (result.multipleTransportZones?.[0]?.distribution || result.transport?.distribution || []) as Array<{product_id: number|null, cost: number}>
-                              if (Array.isArray(dist) && dist.length > 0) {
-                                const transportTotal = dist.reduce((acc, d) => acc + (d.cost || 0), 0)
-                                perLine += transportTotal * pct
-                              }
-                              margin = perLine
-                            }
+                            const margin = subtotal * pct
                             const retention = actualResult.tax_retention_amount || 0
                             const total = subtotal + margin - retention
                             return formatCurrency(total)
