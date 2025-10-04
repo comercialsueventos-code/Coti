@@ -1284,7 +1284,7 @@ export const usePricingForm = (options: UsePricingFormOptions = {}) => {
         use_flexible_transport: formData.useFlexibleTransport || false, // Toggle para distribución manual
         transport_allocations: formData.transportAllocations || [], // Asignaciones manuales por producto
         multiple_transport_zones: formData.selectedTransportZones?.length > 0 ? formData.selectedTransportZones : null, // Nueva implementación
-        subtotal: correctSubtotal,
+        subtotal: fallbackSubtotal,
         transport_cost: transportTotal,
         margin_percentage: formData.marginPercentage ?? 30,
         margin_amount: correctMarginAmount,
